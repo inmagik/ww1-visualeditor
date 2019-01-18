@@ -67,7 +67,7 @@ export const me = token =>
 
 const CLIENT_ID = 'b7X9djWuMXK5WZBCNINieUFyQfnFkIPqgf3MsaN5'
 const oauth = grantType =>
-  request.post(`/o/token/`).type('form').send({
+  request.post(`/editor/o/token/`).type('form').send({
     client_id: CLIENT_ID,
     grant_type: grantType,
   })
